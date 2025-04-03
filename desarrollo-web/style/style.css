@@ -176,39 +176,18 @@ footer ul a img {
   scroll-snap-align: center;
 }
 
-/*PAGE FORM*/
+/*PAGE FORM */
 #form-contact {
-  width: 100%;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  margin: auto;
   background-color: #ff5600;
-  border-radius: 0.25rem;
-  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.4);
 }
 
-form h4 {
-  margin-bottom: 1rem;
-  color: #eee2d7;
-  font-size: 1.25rem;
-  text-align: center;
-}
+
 
 input[type="tel"],
 input[type="text"],
 input[type="email"],
 textarea {
-  margin-bottom: 0.75rem;
-  border-radius: 0.25rem;
-  border-color: #eee2d7;
   background-color: #ff5600;
-  padding: 0.5rem;
-  border: 0.0625rem solid #eee2d7;
-  color: #eee2d7;
-  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.4);
-  font-size: 0.875rem;
 }
 
 input[type="submit"] {
@@ -224,16 +203,15 @@ input[type="submit"] {
   width: 100%;
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: #eee2d7;
-  font-family: "Roboto", serif;
-  font-size: 0.875rem;
+.naranja {
+  background-color: #ff5600; 
+  border-color: #ff5600;     
+  color: #eee2d7;              
 }
 
-textarea::placeholder {
-  color: #eee2d7;
-  font-family: "Roboto", serif;
+.naranja-textarea {
+  border-color: #eee2d7; 
+  background-color: #ff5600; 
 }
 
 /*PAGE PEDIR*/

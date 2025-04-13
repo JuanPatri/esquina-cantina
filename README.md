@@ -30,6 +30,7 @@ El sitio cuenta con las siguientes páginas:
 - **Nosotros:** historia, identidad, ubicación y galeria de imagenes.
 - **Menú:** carta digital de comidas y bebidas.
 - **Pedidos:** seccion de pedidos de la pagina.
+- **Reservas:** reserva tu mesa en el bar.
 - **Contacto:** formulario de contacto.
 
 ---

@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  @include input-base;
+  margin-bottom: $espaciado-s;
+}
+
+input[type="submit"] {
+  @include boton-responsivo($color-secundario, $color-terciario);
+  margin: 0 auto;
+}

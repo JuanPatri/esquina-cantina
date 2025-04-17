@@ -1,0 +1,29 @@
+/*ESTRUCTURA GENERAL DE LA PAGINA*/
+@use "./layout/_grid.scss";
+
+/*ESTILOS GLOBALES*/
+@use "./_global.scss";
+
+/*ESTILOS INPUTS*/
+@use "./components/inputs";
+
+/*FONDO PAGINA*/
+@use "./layout/_background.scss";
+
+/*HEADER*/
+@use "./layout/_header.scss";
+
+/*FOOTER*/
+@use "./layout/footer";
+
+/*INICIO*/
+@use "./pages/inicio";
+
+/*NOSOTROS*/
+@use "./pages/nosotros";
+
+/*MENU*/
+@use "./pages/menu";
+
+/*PEDIDOS*/
+@use "./pages/pedi";

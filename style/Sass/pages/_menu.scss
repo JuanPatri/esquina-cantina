@@ -1,0 +1,69 @@
+@use "../abstracts/variables"as *;
+
+.carta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espaciado-m;
+    padding: $espaciado-l;
+    background: linear-gradient(135deg, $color-terciario, lighten($color-primario, 30%));
+    border-radius: $border-radius;
+    box-shadow: $shadow-base;
+  
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .carta-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: $border-radius;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      box-shadow: $shadow-base;
+      border: 2px solid $color-primario;
+      transition: border-color 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        border-color: $color-secundario;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: inherit;
+        filter: brightness(0.9);
+        transition: filter 0.3s ease;
+  
+        &:hover {
+          filter: brightness(1);
+        }
+      }
+  
+      .titulo-carta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        font-family: $font-destacada;
+        font-size: $paragraph-l;
+        padding: $espaciado-xs;
+        text-align: center;
+        letter-spacing: 0.5px;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: $color-secundario;
+        }
+      }
+    }
+  }

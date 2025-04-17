@@ -1,0 +1,47 @@
+@use "../abstracts/variables.scss" as *;
+
+$navbar-light-icon-color: $color-primario;
+$navbar-light-toggler-border-color: $color-primario;
+
+@use "../../../node_modules/bootstrap/scss/bootstrap.scss" with (
+  $navbar-light-icon-color: $color-primario,
+  $navbar-light-toggler-border-color: $color-primario
+);
+
+.navbar {
+  background-color: $color-secundario !important;
+
+  img {
+    height: 5rem;
+    width: auto;
+
+    @media (min-width: $breakpoint-md) {
+      height: 8rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      height: 10rem;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      height: 12rem;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    color: $color-terciario;
+
+    &:hover {
+      color: $color-terciario;
+      background-color: $color-primario;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $color-primario;
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba($color-primario, 0.5); 
+    }
+  }
+}

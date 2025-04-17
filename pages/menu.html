@@ -16,35 +16,61 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-left">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
-
-        <a href="../index.html">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
             <img src="../img/logo-crema.png" alt="Logo de Esquina Cantina" id="logo-nav">
-        </a>
-
-        <nav class="nav-right">
-            <ul>
-                <li><a href="./menu.html">Menú</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./pedi.html">Pedí acá</a></li>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pedi.html">Pedidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>                  
             </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="carta">
-            <img src="../img/chivito-carta.jpg" alt="Carta seccion milanesas, chivito y acompañamineto">
-            <img src="../img/pizza-carta.jpg" alt="Carta seccion pizza y parrilla">
-            <img src="../img/refresco-carta.jpg" alt="Carta seccion refrescos">
-            <img src="../img/cerveza-carta.jpg" alt="Carta seccion cervezas y vinos">
+          </div>
         </div>
-    </main>
+      </nav>
+</header>
+<main>
+  <div class="carta">
+    <div class="carta-item">
+      <img src="../img/chivito-carta.jpg" alt="Carta seccion milanesas, chivito y acompañamineto">
+      <span class="titulo-carta">Chivitos & Milangas</span>
+    </div>
+    <div class="carta-item">
+      <img src="../img/pizza-carta.jpg" alt="Carta seccion pizza y parrilla">
+      <span class="titulo-carta">Pizza & Parrilla</span>
+    </div>
+    <div class="carta-item">
+      <img src="../img/refresco-carta.jpg" alt="Carta seccion refrescos">
+      <span class="titulo-carta">Refrescos</span>
+    </div>
+    <div class="carta-item">
+      <img src="../img/cerveza-carta.jpg" alt="Carta seccion cervezas y vinos">
+      <span class="titulo-carta">Cervezas & Vinos</span>
+    </div>
+  </div>
+</main>
+
     <footer>
         <ul>
             <li><a href="https://api.whatsapp.com/send?phone=59892380930" target="_blank"><img src="../img/logo-wp.png"

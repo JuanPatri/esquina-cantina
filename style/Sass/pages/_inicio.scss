@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    #bienvenidos-inicio {
+      font-family: $font-destacada;
+      font-size: $font-size-xl;
+      color: $color-primario;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: $font-size-xxl;
+      }
+  
+      @media (min-width: $breakpoint-lg) {
+        font-size: $font-size-xxxl;
+      }
+  
+      @media (min-width: $breakpoint-xl) {
+        font-size: $font-size-xxxxl;
+      }
+    }
+  
+    #se-pica-inicio {
+      font-family: $font-principal;
+      font-size: $font-size-xs;
+      color: $color-terciario;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: $font-size-s;
+      }
+  
+      @media (min-width: $breakpoint-lg) {
+        font-size: $font-size-base;
+      }
+  
+      @media (min-width: $breakpoint-xl) {
+        font-size: $font-size-l;
+      }
+    }
+  }

@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as *;
+
+#main-nosotros {
+    display: flex;
+    flex-direction: column;
+
+    section{
+        p{
+            max-width: 70%;
+            margin: 0 auto;
+            text-align:center;
+            font-size: $paragraph-xs;
+            margin-bottom: 2rem;
+            color: $color-terciario;
+
+            @media (min-width: $breakpoint-md) {
+                font-size: $paragraph-s;
+              }
+          
+              @media (min-width: $breakpoint-lg) {
+                font-size: $paragraph-m;
+              }
+          
+              @media (min-width: $breakpoint-xl) {
+                font-size: $paragraph-l;
+              }
+        }
+    
+    }
+    #mapa-google {
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+}

@@ -1,0 +1,56 @@
+@use "./variables" as *;
+
+@mixin grupal-tarjetas-pedir {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin individual-tarjetas-pedir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: $border-radius;
+    padding: 30px;
+    background-color: $color-primario;
+    -webkit-box-shadow: $shadow-grande;
+    -moz-box-shadow: $shadow-grande;
+    box-shadow: $shadow-grande;
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    max-width: 250px;
+}
+
+@mixin input-base {
+    background-color: $color-primario;
+    color: $color-terciario;
+    padding: $espaciado-s;
+    border-radius: $border-radius;
+    border: 1px solid $color-terciario;
+    box-shadow: $shadow-base;
+  }
+
+  @mixin boton-responsivo($bg, $text) {
+    background-color: $bg;
+    color: $text;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    box-shadow: $shadow-base;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  
+    @media (min-width: $breakpoint-md) {
+      font-size: 0.9rem;
+    }
+  
+    @media (min-width: $breakpoint-lg) {
+      font-size: 1rem;
+    }
+  
+    @media (min-width: $breakpoint-xl) {
+      font-size: 1.1rem;
+    }
+  }  

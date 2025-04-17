@@ -1,0 +1,51 @@
+@use "../abstracts/variables.scss" as *;
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+  
+    header {
+      grid-area: header;
+    }
+  
+    main {
+      grid-area: main;
+    }
+  
+    footer {
+      grid-area: footer;
+    }
+  }
+  
+
+@media (min-width: $breakpoint-sm) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header"
+                             "main main"
+                             "footer footer";
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header header"
+                             "main main"
+                             "footer footer";
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+    }
+}

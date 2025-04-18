@@ -57,5 +57,8 @@ main {
                 box-shadow: $shadow-base;
             }
         }
+        input::placeholder{
+        color: $color-terciario;
+      }
     }
 }

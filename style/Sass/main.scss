@@ -7,6 +7,9 @@
 /*ESTILOS INPUTS*/
 @use "./components/inputs";
 
+/*FORM*/
+@use "./layout/forms";
+
 /*FONDO PAGINA*/
 @use "./layout/_background.scss";
 
@@ -27,3 +30,6 @@
 
 /*PEDIDOS*/
 @use "./pages/pedi";
+
+/*CONTACTO*/
+@use "./pages/contacto";

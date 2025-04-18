@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;  
+  margin: 0 auto;
+  padding: $espaciado-m;
+  color: $color-terciario;
+  font-family: $font-principal;
+
+  @media (max-width: $breakpoint-md) {
+    padding: $espaciado-s;  
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: $espaciado-xs;  
+  }
+
+  input,
+  textarea {
+    margin-bottom: $espaciado-s; 
+    font-size: $paragraph-m;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $paragraph-s;  
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: $paragraph-xs; 
+    }
+  }
+
+  input[type="submit"] {
+    @include boton-responsivo($color-secundario, $color-terciario);
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: darken($color-secundario, 10%);
+    }
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+  color: $color-terciario;
+}
+}

@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#main-reservas {
+    display: flex;
+    flex-direction: column;
+    color: $color-terciario;
+
+    p {
+        font-family: $font-destacada;
+        font-size: $font-size-base;
+    }
+    .cant-personas {
+        p {
+            font-family: $font-principal;
+            font-size: $paragraph-xs;
+        }
+
+        a {
+            color: $color-primario;
+        }
+
+        button {
+            margin-bottom: $espaciado-s;
+            background-color: $color-primario;
+            border-radius: 0.3rem;
+            color: $color-terciario;
+            border: none;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            box-shadow: $shadow-base;
+            padding: $espaciado-s $espaciado-s;
+
+            &:hover {
+              background-color: lighten($color-primario, 5%);
+            }
+          
+            @media (min-width: $breakpoint-md) {
+              font-size: 0.9rem;
+            }
+          
+            @media (min-width: $breakpoint-lg) {
+              font-size: 1rem;
+            }
+          
+            @media (min-width: $breakpoint-xl) {
+              font-size: 1.1rem;
+            }
+        }
+    }
+
+    .fecha-reserva {
+    }
+
+    .hora-reserva {
+
+    }
+
+    .nota-reserva {
+        display: flex;
+        flex-direction: column;
+
+        textarea::placeholder{
+          color: $color-terciario;
+        }
+
+        textarea {
+          margin-bottom: 0.5rem;
+        }
+    }
+
+    label{
+      margin-bottom: 0.5rem;
+    }
+}

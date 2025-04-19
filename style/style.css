@@ -94,6 +94,44 @@ input[type=submit] {
   }
 }
 
+input[type=date],
+input[type=time] {
+  background-color: #ff5600;
+  color: #eee2d7;
+  font-family: "Roboto", serif;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+input[type=date]:hover,
+input[type=time]:hover {
+  background-color: rgb(255, 102.9, 25.5);
+}
+input[type=date]:focus,
+input[type=time]:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 576px) {
+  input[type=date],
+  input[type=time] {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (min-width: 768px) {
+  input[type=date],
+  input[type=time] {
+    font-size: 1.8rem;
+  }
+}
+
 /*FORM*/
 form {
   display: flex;
@@ -12338,6 +12376,67 @@ main div input::placeholder {
   #main-contact p {
     font-size: 1.5rem;
   }
+}
+
+/*RESERVA*/
+#main-reservas {
+  display: flex;
+  flex-direction: column;
+  color: #eee2d7;
+}
+#main-reservas p {
+  font-family: "Knewave", system-ui;
+  font-size: 1.8rem;
+}
+#main-reservas .cant-personas p {
+  font-family: "Roboto", serif;
+  font-size: 0.9rem;
+}
+#main-reservas .cant-personas a {
+  color: #ff5600;
+}
+#main-reservas .cant-personas button {
+  margin-bottom: 1rem;
+  background-color: #ff5600;
+  border-radius: 0.3rem;
+  color: #eee2d7;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 1rem 1rem;
+}
+#main-reservas .cant-personas button:hover {
+  background-color: rgb(255, 102.9, 25.5);
+}
+@media (min-width: 768px) {
+  #main-reservas .cant-personas button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 992px) {
+  #main-reservas .cant-personas button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  #main-reservas .cant-personas button {
+    font-size: 1.1rem;
+  }
+}
+#main-reservas .nota-reserva {
+  display: flex;
+  flex-direction: column;
+}
+#main-reservas .nota-reserva textarea::placeholder {
+  color: #eee2d7;
+}
+#main-reservas .nota-reserva textarea {
+  margin-bottom: 0.5rem;
+}
+#main-reservas label {
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  @include input-base;
+  margin-bottom: $espaciado-s;
+}
+
+input[type="submit"] {
+  @include boton-responsivo($color-secundario, $color-terciario);
+  margin: 0 auto;
+}
+
+input[type="date"],
+input[type="time"] {
+  background-color: $color-primario;
+  color: $color-terciario;
+  font-family: $font-principal;
+  font-size: $font-size-base;
+  border-radius: $border-radius;
+  border: none;
+  padding: $espaciado-s $espaciado-m;
+  box-shadow: $shadow-base;
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: $espaciado-s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($color-primario, 5%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 8px $color-sombra;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-size-s;
+    padding: $espaciado-xs $espaciado-s;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-base;
+  }
+}

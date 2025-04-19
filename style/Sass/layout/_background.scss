@@ -1,0 +1,12 @@
+@use "../abstracts/variables.scss" as *;
+
+body {
+    background-image: linear-gradient(
+        to bottom,
+        $color-secundario,
+        rgba(255, 86, 0, 0) 200%
+      ),
+      url(../img/restaurant-interior.jpg);
+    background-size: cover;
+    background-position: center;
+}

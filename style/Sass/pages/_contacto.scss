@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+#main-contact {
+    p{
+        color: $color-terciario;
+        font-family: $font-principal;
+        font-size: $paragraph-xs;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: $paragraph-s;
+          }
+      
+          @media (min-width: $breakpoint-lg) {
+            font-size: $paragraph-m;
+          }
+      
+          @media (min-width: $breakpoint-xl) {
+            font-size: $paragraph-l;
+          }
+    }
+}

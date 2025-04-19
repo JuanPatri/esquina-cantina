@@ -1,0 +1,47 @@
+/* COLORES */
+$color-primario: #ff5600;   
+$color-secundario: #000ebe; 
+$color-terciario: #eee2d7;      
+$color-sombra: rgba(0, 0, 0, 0.4);
+
+/* TIPOGRAFÍA */
+$font-principal: 'Roboto', serif;
+$font-destacada: 'Knewave', system-ui;
+
+// Tamaños ajustados para First in Mobile PAGINA INICIO
+$font-size-xs: 1.2rem;   
+$font-size-s: 1.5rem;    
+$font-size-base: 1.8rem; 
+$font-size-l: 2.2rem;    
+$font-size-xl: 3rem;  
+$font-size-xxl: 4rem;
+$font-size-xxxl: 5rem;
+$font-size-xxxxl: 6rem;
+
+// Tamaños exclusivos para párrafos
+$paragraph-xs: 0.9rem;   
+$paragraph-s: 1.1rem;    
+$paragraph-m: 1.3rem;    
+$paragraph-l: 1.5rem;    
+
+/* BREAKPOINTS */
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+/* TAMAÑOS Y ESPACIOS */
+$espaciado-xs: 0.5rem; 
+$espaciado-s: 1rem;
+$espaciado-m: 1.5rem;
+$espaciado-l: 2rem;
+
+$ancho-maximo-seccion: 90%; 
+$ancho-logo-mobile: 2rem;  
+$ancho-logo-tablet: 4rem;
+$ancho-logo-desktop: 6rem;
+
+/* BORDES Y SHADOWS */
+$border-radius: 0.8rem; 
+$shadow-base: 2px 2px 5px $color-sombra;
+$shadow-grande: 12px 8px 30px -1px rgba(0, 0, 0, 0.58);

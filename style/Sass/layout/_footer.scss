@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  background-color: $color-primario;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: $espaciado-s;
+
+    li {
+      margin-top: $espaciado-s;
+      a {
+        img {
+          width: $ancho-logo-mobile;
+          height: auto;
+          transition: transform 0.3s ease;
+          
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

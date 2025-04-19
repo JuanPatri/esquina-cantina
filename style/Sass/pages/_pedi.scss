@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+main {
+
+    .titulo {
+        font-weight: bold;
+        color: $color-terciario;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        border-bottom: 2px solid $color-secundario;
+        letter-spacing: 3px;
+    }
+    
+    #comida-1{
+        @include grupal-tarjetas-pedir;
+        section {
+            @include individual-tarjetas-pedir;
+        }
+    }
+
+    #comida-2{
+        @include grupal-tarjetas-pedir;
+        section {
+            @include individual-tarjetas-pedir;
+        }
+    }
+
+    div {
+        section {
+            p {
+                margin-bottom: 5px;
+                margin-top: 5px; 
+                color: $color-terciario;
+                font-size: 1rem;
+
+                @media (min-width: $breakpoint-md) {
+                    font-size: 1.2rem;
+                  }
+                
+                  @media (min-width: $breakpoint-lg) {
+                    font-size: 1.4rem;
+                  }
+                
+                  @media (min-width: $breakpoint-xl) {
+                    font-size: 1.6rem;
+                  }
+            }
+
+            img {
+                width: 100%;
+                max-width: 150px;
+                height: auto;
+                border-radius: 4px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+                box-shadow: $shadow-base;
+            }
+        }
+        input::placeholder{
+        color: $color-terciario;
+      }
+    }
+}

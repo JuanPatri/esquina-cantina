@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+button {
+  margin-bottom: $espaciado-s;
+  background-color: $color-primario;
+  color: $color-terciario;
+  border: none;
+  padding: $espaciado-s $espaciado-s;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: $shadow-base;
+
+  &:hover {
+    background-color: lighten($color-primario, 5%);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 0.9rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    font-size: 1.1rem;
+  }
+}

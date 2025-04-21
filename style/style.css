@@ -206,6 +206,36 @@ form textarea::placeholder {
   color: #eee2d7;
 }
 
+/*BOTON*/
+button {
+  margin-bottom: 1rem;
+  background-color: #ff5600;
+  color: #eee2d7;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+  background-color: rgb(255, 102.9, 25.5);
+}
+@media (min-width: 768px) {
+  button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 992px) {
+  button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  button {
+    font-size: 1.1rem;
+  }
+}
+
 /*FONDO PAGINA*/
 body {
   background-image: linear-gradient(to bottom, #000ebe, rgba(255, 86, 0, 0) 200%), url(../img/restaurant-interior.jpg);
@@ -12384,6 +12414,10 @@ main div input::placeholder {
   flex-direction: column;
   color: #eee2d7;
 }
+#main-reservas button {
+  margin-bottom: 20px;
+  border-radius: 0.3rem;
+}
 #main-reservas p {
   font-family: "Knewave", system-ui;
   font-size: 1.8rem;
@@ -12394,36 +12428,6 @@ main div input::placeholder {
 }
 #main-reservas .cant-personas a {
   color: #ff5600;
-}
-#main-reservas .cant-personas button {
-  margin-bottom: 1rem;
-  background-color: #ff5600;
-  border-radius: 0.3rem;
-  color: #eee2d7;
-  border: none;
-  padding: 0.5rem;
-  font-size: 0.8rem;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  padding: 1rem 1rem;
-}
-#main-reservas .cant-personas button:hover {
-  background-color: rgb(255, 102.9, 25.5);
-}
-@media (min-width: 768px) {
-  #main-reservas .cant-personas button {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 992px) {
-  #main-reservas .cant-personas button {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  #main-reservas .cant-personas button {
-    font-size: 1.1rem;
-  }
 }
 #main-reservas .nota-reserva {
   display: flex;
@@ -12437,6 +12441,10 @@ main div input::placeholder {
 }
 #main-reservas label {
   margin-bottom: 0.5rem;
+}
+#main-reservas input[type=submit] {
+  max-width: 10%;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

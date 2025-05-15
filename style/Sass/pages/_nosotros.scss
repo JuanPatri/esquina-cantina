@@ -5,6 +5,17 @@
     flex-direction: column;
 
     section{
+      h1{
+        color: $color-primario;
+        margin-bottom: 8px;
+      }
+      h2 {
+        color: $color-primario;
+      }
+      h3 {
+        color: $color-primario;
+      }
+
         p{
             max-width: 70%;
             margin: 0 auto;

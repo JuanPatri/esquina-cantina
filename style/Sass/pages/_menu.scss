@@ -1,5 +1,11 @@
 @use "../abstracts/variables"as *;
 
+.menu-section {
+  
+  h1{
+    color: $color-primario;
+  }
+}
 .carta {
     display: grid;
     grid-template-columns: 1fr;
